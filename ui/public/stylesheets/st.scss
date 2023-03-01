@@ -1,0 +1,83 @@
+//core
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+///
+.back{
+  color:rgb(13,110,253);
+  &:hover{
+    color: gold;
+    transition: 1s;
+  }
+}
+.photo-div{
+  height: 254px;
+  width: 254px;
+  border-radius: 50%;
+}
+#userPhoto{
+  max-width: 254px;
+  max-height: 100%;
+  min-width: 254px;
+
+}
+
+#fileInput{
+  margin: 40px 0 40px 0px;
+}
+
+
+//choose
+.core-div{
+  margin-top: 50px;
+  display: flex;
+  flex-direction:column;
+  border: solid 1px gray;
+  border-radius: 25px;
+  .numberOrEmail{
+
+    margin: 30px 0px 20px 0px;
+  }
+}
+
+#feedback{
+  font-size: 16px;
+}
+
+.link{
+  :hover{
+    color: lightskyblue;
+    transition: 0.3s;
+  }
+}
+
+.brand-link{
+  margin: 35px 0px 15px 0px;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 4px 10px;
+  color: lightgray;
+
+
+
+}
+
+//nullstyle
+a:focus, a:active {outline:none};
+a, a visited{text-decoration: none;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

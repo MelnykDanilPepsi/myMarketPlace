@@ -1,0 +1,30 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "FortAwesome/Font-Awesome": "*",
+  "scripts": {
+    "serve": "nodemon app.js",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bootstrap": "^5.3.0-alpha1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "font-awesome": "^4.7.0",
+    "googleapis": "^111.0.0",
+    "mongoose": "^6.8.3",
+    "multiparty": "^4.2.3",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}

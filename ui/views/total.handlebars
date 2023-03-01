@@ -1,0 +1,101 @@
+
+<div class="container">
+    <form class="p-lg-5 border-dark-subtle" method="POST" action="/auth/registration/"  style="border: 1px solid; border-radius: 10px; margin-top : 100px" id="registrationForm" enctype="multipart/form-data">
+        <div class="mb-3 row g-2 w-100">
+            <div class="col-auto w-50">
+                <label for="exampleInputPassword1" class="form-label" >First Name</label>
+                <input type="text" class="form-control "  id="FirstName" name="firstname">
+                <div class="valid-feedback">
+                    Ok!
+                </div>
+            </div>
+            <div class="col-auto w-50">
+                <label for="exampleInputPassword1" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="LastName" name="lastname">
+                <div class="valid-feedback">
+                    Nice!
+                </div>
+            </div>
+        </div>
+        <label for="gender" class="form-label" style="margin-top: 30px">Gender</label>
+        <div class="mb-3 d-flex justify-content-evenly" >
+            <div class=" ">
+                <input type="radio" class="form-check-input col-auto " checked  name="gender" id="Male" value="Male"> Male
+
+            </div>
+            <div class=" ">
+                <input type="radio" class="form-check-input col-auto " name="gender" id="Female" value="Female"> Female
+
+            </div>
+            <div style="margin-bottom: 30px">
+                <input type="radio" class="form-check-input col-auto" name="gender" id="Other" value="Other"> Other
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="UserName" class="form-label" >Username</label>
+            <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="UserName" name="username">
+                <div class="invalid-feedback">
+                   Invalid characters
+                </div>
+                <div class="valid-feedback">
+                    Nice!
+                </div>
+            </div>
+            <div id="emailHelp" class="form-text">You can change this everytime.</div>
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="Email"  aria-describedby="emailHelp" name="email">
+            <div class="invalid-feedback">
+                Minimum eight characters, at least one uppercase letter, one lowercase letter and one number
+            </div>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+            <div class="invalid-feedback">
+                Minimum eight characters, at least one uppercase letter, one lowercase letter and one number
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="passwordRepeat" class="form-label">Repeat Password</label>
+            <input type="password" class="form-control" id="passwordRepeat">
+            <div class="invalid-feedback">
+                Passwords do not match
+            </div>
+        </div>
+
+        <label for="formFile" class="form-label" style="margin-top: 30px">Profile photo</label>
+        <div class="mb-3 d-flex justify-content-between align-items-center flex-column">
+            <div class="avatar w-25 photo-div">
+                <img src="/user.png" alt="userPhoto" id="userPhoto" class="border-dark-subtle">
+            </div>
+            <input class="form-control w-25" type="file" id="fileInput" accept="image/png, image/gif, image/jpeg" name="photoUrl">
+
+        </div>
+        <div class="mb-3 form-check d-flex justify-content-evenly">
+
+            <div class="">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div>
+            <input class="form-check-input" type="checkbox" value="" id="CheckAgree" required>
+            <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions (necessarily)
+            </label></div>
+            <div class="invalid-feedback">
+                You must agree before submitting.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="registrationBtn" disabled>Submit</button>
+
+    </form>
+</div>
+<script src="/scripts/form-validation.js" type="module"></script>
+<script src="/scripts/functionsDB.js" type="module"></script>
+

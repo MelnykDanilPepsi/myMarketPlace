@@ -1,0 +1,31 @@
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-around">
+        <div class="logo-box navbar-brand">
+            <a class="navbar-brand" href="/"><i class="fa-solid fa-basket-shopping fs-3"></i> iMarketPlace</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link {{activeHome}}" aria-current="page" href="/main/home">Home</a>
+                <a class="nav-link {{activeNews}}" href="/main/news">News</a>
+            </div>
+        </div>
+
+        <form class="d-flex" role="search" style="margin-right: 20%;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        {{#if registration}}
+            <div class="d-flex me-2">
+                <a href="/auth/login"><button class = 'btn btn-primary me-2'>Login</button></a>
+                <a href="/auth/registration"><button class = 'btn btn-warning me-2'>Sign in</button></a>
+            </div>
+        {{/if}}
+
+    </div>
+</nav>
+
